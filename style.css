@@ -437,12 +437,12 @@ nav .fa-solid{
         background: #fd4a22;
         position: fixed;
         top: 0;
-        right: -200;
+        right: -200px; /*initialy side menu is closed*/
         width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        transition: right 0.5s;
+        transition: right 0.5s; /*smooth transition*/
     }
     nav ul li{
         display: block;
