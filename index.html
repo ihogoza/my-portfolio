@@ -57,18 +57,20 @@
                 </div>
                 <div class="tab-contents active-tab" id="Skills">
                     <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Web Development</span><br>Web app Development</li>
-                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                        <li><span>Data Analytics</span><br>ETL process as well as data visualization using  Tableau, Power BI, and/or Python</li>
+                        <li><span>Data Science|Machine Learning</span><br>Data Collection, Data Cleaning and Preprocessing, Exploratory Data Analysis (EDA), Feature Engineering, Model Selection and Training, Model Evaluation and Deployment</li>
+                        <li><span>Database</span><br>RDBMS, NoSQL, MongoDB, Postgresql, XML database, SQL server and MySQL</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces; from user research plan to high fidelity prototype</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="Experience">
                     <ul>
-                        <li><span>2024 - Current</span><br>Research Assistant at Carnegie Mellon University</li>
-                        <li><span>2023 - 2023</span><br>Advanced Database Managment System Teaching Assistant at CMU</li>
-                        <li><span>2023 - 2023</span><br>Internship at Carnegie Mellon University</li>
-                        <li><span>2023 - 2023</span><br>Advanced Database Managment System Teaching Assistant at AUCA</li>
-                        <li><span>2021 - 2022</span><br>Internship at Klab Startups Academy</li>
+                        <li><span>2024 - Current</span><br>Graduate Research Assistant at Carnegie Mellon University</li>
+                        <li><span>Feb/2024 - Apr/2024</span><br>Data Analyst Bootcamp</li>
+                        <li><span>Sep/2023 - Dec/2023</span><br>Advanced Database Managment System Graduate Teaching Assistant at CMU</li>
+                        <li><span>Jun/2023 - Aug/2023</span><br>Graduate summer intern at Carnegie Mellon University</li>
+                        <li><span>Jun/2023 - Aug/2023</span><br>Advanced Database Managment System Graduate Teaching Assistant at AUCA</li>
+                        <li><span>Oct/2021 - Jan/2022</span><br>Internship at Klab Startups Academy</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="Education">
@@ -152,9 +154,52 @@
                 </div>
             </div>
         </div>
-        <a href="" class="btn">See more</a>
+        <!-- <a href="" class="btn">See more</a> -->
+        <a href="#" class="btn" id="showMoreBtn">Show more</a>
         </div>
+</div>
 
+
+<!-- --------------------------------------------------showmore------------------------------ -->
+<div id="portfolio1" class="hidden">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/My portfolio.png">
+                <div class="layer">
+                    <h3>My portfolio</h3>
+                    <p>This portfolio has been done using html, css and javascript</p>
+                    <a href="https://github.com/ihogoza/my-portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/manuscript.jpg">
+                <div class="layer">
+                    <h3>Online Health Information</h3>
+                    <p>A research on Online Health information, 
+                        we are using an AI techniques - 
+                        topic modeling to identify  what pregnancy information 
+                        is available in Kinyarwanda. The aim is to identify 
+                        what information gaps exist by comparing our 
+                        results with recommendations by the Rwandan Ministry 
+                        ofHealth and the World Health Organization.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/IMG_6914.jpg.png">
+                <div class="layer">
+                    <h3>Banking Bot</h3>
+                    <p>As part of my undergraduate requirements
+                        I Designed and diployed a chatbot on both Telegram
+                        and Facebook. I was basecally designed to answer most
+                        FAQ of Equity bank.</p>
+                    <a href="images/valentine's thesis sub.pdf" download ><i class="fa-solid fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
 
 </div>
 
@@ -238,6 +283,31 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+
+<!-- --------------------------showmorescript---------------------------------- -->
+
+  <script>
+    // Get references to the link and the additional div
+    const showMoreLink = document.getElementById('showMoreBtn');
+    const moreContent = document.getElementById('portfolio1');
+
+    // Add a click event listener to the link
+    showMoreLink.addEventListener('click', function(event) {
+      // Prevent the default behavior of the link
+      event.preventDefault();
+
+      // Toggle the visibility of the additional div
+      moreContent.classList.toggle('hidden');
+
+      // Change the link text based on the div's visibility
+      if (moreContent.classList.contains('hidden')) {
+        showMoreLink.textContent = 'Show More';
+      } else {
+        showMoreLink.textContent = 'Show Less';
+      }
+    });
+  </script>
+
     
 </body>
 </html>

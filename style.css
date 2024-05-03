@@ -491,6 +491,18 @@ nav .fa-solid{
     display: block;
 }
 
+/* -----------------------------showmore---------------------- */
+.hidden {
+    display: none;
+  }
+
+#portfolio1{
+    padding: 50px 0;
+    /* background: #000000; */
+    margin-top: -75px;
+    margin-bottom: 50px;
+}
+
 
 
 
